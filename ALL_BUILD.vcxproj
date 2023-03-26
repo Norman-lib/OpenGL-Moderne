@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6C36C21-21D2-32AE-815B-8B2B6B71C015}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Norma\Downloads\ogl-master\ogl-master\external\AntTweakBar-1.16\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glfw-3.1.2\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glm-0.9.7.1;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glew-1.13.0\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\assimp-3.0.1270\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\Norma\Downloads\ogl-master\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Norma\Downloads\ogl-master\ogl-master\external\AntTweakBar-1.16\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glfw-3.1.2\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glm-0.9.7.1;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glew-1.13.0\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\assimp-3.0.1270\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\Norma\Downloads\ogl-master\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Norma\Downloads\ogl-master\ogl-master\external\AntTweakBar-1.16\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glfw-3.1.2\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glm-0.9.7.1;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glew-1.13.0\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\assimp-3.0.1270\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\Norma\Downloads\ogl-master\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Norma\Downloads\ogl-master\ogl-master\external\AntTweakBar-1.16\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glfw-3.1.2\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glm-0.9.7.1;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\glew-1.13.0\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\assimp-3.0.1270\include;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\Norma\Downloads\ogl-master\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Norma/Downloads/ogl-master/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Norma/Downloads/ogl-master/ogl-master -BC:/Users/Norma/Downloads/ogl-master/ogl-master/build --check-stamp-file C:/Users/Norma/Downloads/ogl-master/ogl-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Norma/Downloads/ogl-master/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Norma/Downloads/ogl-master/ogl-master -BC:/Users/Norma/Downloads/ogl-master/ogl-master/build --check-stamp-file C:/Users/Norma/Downloads/ogl-master/ogl-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Norma/Downloads/ogl-master/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Norma/Downloads/ogl-master/ogl-master -BC:/Users/Norma/Downloads/ogl-master/ogl-master/build --check-stamp-file C:/Users/Norma/Downloads/ogl-master/ogl-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Norma/Downloads/ogl-master/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Norma/Downloads/ogl-master/ogl-master -BC:/Users/Norma/Downloads/ogl-master/ogl-master/build --check-stamp-file C:/Users/Norma/Downloads/ogl-master/ogl-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\Norma\Downloads\ogl-master\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Norma\Downloads\ogl-master\ogl-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\ZERO_CHECK.vcxproj">
+      <Project>{92756034-6581-3A7A-AF51-175F7B6BBB41}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\ANTTWEAKBAR_116_OGLCORE_GLFW.vcxproj">
+      <Project>{3D47077F-9935-3CEA-B0C0-8683AF574B77}</Project>
+      <Name>ANTTWEAKBAR_116_OGLCORE_GLFW</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\bullet-2.81-rev2613\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{060C6302-1685-3A3A-B0AD-4D4584D91773}</Project>
+      <Name>BulletCollision</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{6A72CB9A-7078-3214-B8EE-DC1ADB368ADE}</Project>
+      <Name>BulletDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\bullet-2.81-rev2613\src\BulletSoftBody\BulletSoftBody.vcxproj">
+      <Project>{B9C06B5F-B8AC-30AD-8DB2-35186D686FBC}</Project>
+      <Name>BulletSoftBody</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\GLEW_1130.vcxproj">
+      <Project>{EF5DD3DF-BA88-38DC-AB76-6C517379781E}</Project>
+      <Name>GLEW_1130</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\LinearMath.vcxproj">
+      <Project>{CB8F0F00-29C9-3ACF-9BD0-E417231DFC6A}</Project>
+      <Name>LinearMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\assimp-3.0.1270\code\assimp.vcxproj">
+      <Project>{73F6085E-A27B-3EA4-BB39-577CB8EFF6A7}</Project>
+      <Name>assimp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\examples\boing.vcxproj">
+      <Project>{845AF058-3A4D-39B5-BA56-C6B0D856F55B}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\clipboard.vcxproj">
+      <Project>{F0B37961-0632-38DD-813A-6AB114D16A95}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\cursor.vcxproj">
+      <Project>{72FD0D9F-293F-3B03-91CC-A96F35E6BB17}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\empty.vcxproj">
+      <Project>{FE41D406-29A5-356C-A388-B3C5C33299DC}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\events.vcxproj">
+      <Project>{5E8B9CD6-E990-344F-A1F3-E37E38E75BAE}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\gamma.vcxproj">
+      <Project>{D509822B-9404-31B8-9F90-62AD3E9EE359}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\examples\gears.vcxproj">
+      <Project>{BD21F75E-1661-3FC0-9659-B8C6C758DD54}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{C94445A3-3B49-36D8-9C5D-BAC61A00F883}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\glfwinfo.vcxproj">
+      <Project>{7B364709-12B6-3DE6-80D9-BE4E7AC0B4C8}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\examples\heightmap.vcxproj">
+      <Project>{88DA620E-5FF7-3A0E-99A7-16FCFFDDC830}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\iconify.vcxproj">
+      <Project>{A082446B-4835-3C75-A119-B170B1B6994A}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\joysticks.vcxproj">
+      <Project>{5DD30A0F-DB3D-3F9F-82EB-6886D93D385C}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\misc05_picking_BulletPhysics.vcxproj">
+      <Project>{6773E938-3A23-39EA-83ED-CD2655D95C13}</Project>
+      <Name>misc05_picking_BulletPhysics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\misc05_picking_custom.vcxproj">
+      <Project>{9E591116-B8F5-3E77-B06E-866B2F33BE4F}</Project>
+      <Name>misc05_picking_custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\misc05_picking_slow_easy.vcxproj">
+      <Project>{7389C7D8-B277-375C-BED7-4A0626636209}</Project>
+      <Name>misc05_picking_slow_easy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\monitors.vcxproj">
+      <Project>{894FEB88-CA20-3397-8A32-D1C05D32BBED}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\msaa.vcxproj">
+      <Project>{1C06D1AC-3F65-3A4F-85E9-E5E32F6DEAA4}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\examples\particles.vcxproj">
+      <Project>{12C35530-DFFC-39AB-9ED8-2742F7E208DB}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\playground.vcxproj">
+      <Project>{BD5233F6-F013-3F99-81DF-4544520FBE1D}</Project>
+      <Name>playground</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\reopen.vcxproj">
+      <Project>{DE0E747B-CE31-3497-989F-3AF953C7A18C}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\sharing.vcxproj">
+      <Project>{38D4C093-94B6-3183-9541-100B80E45404}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\examples\simple.vcxproj">
+      <Project>{74638F99-A1A3-35BF-A456-5AA4FF418A52}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\examples\splitview.vcxproj">
+      <Project>{0790D64C-FC4B-3E73-828B-8AE5A570FC23}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\tearing.vcxproj">
+      <Project>{4FDC056C-C55D-359D-A8BF-E02C6924FFD8}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\threads.vcxproj">
+      <Project>{64FDC3E0-FF57-3D18-99B5-9815A66489BB}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\title.vcxproj">
+      <Project>{333C2C36-F8DB-309B-AF03-E57E4936A964}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial01_first_window.vcxproj">
+      <Project>{1E826DC1-7310-3492-BC91-D9843C0CA181}</Project>
+      <Name>tutorial01_first_window</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial02_red_triangle.vcxproj">
+      <Project>{B3B9FD27-3FEA-3507-BD07-5479A48702B9}</Project>
+      <Name>tutorial02_red_triangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial03_matrices.vcxproj">
+      <Project>{1D33EDD2-01F5-3C05-BDC6-AA41C449C06F}</Project>
+      <Name>tutorial03_matrices</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial04_colored_cube.vcxproj">
+      <Project>{4CC034FB-9C57-3C92-AB4D-DED75C8119E2}</Project>
+      <Name>tutorial04_colored_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial05_textured_cube.vcxproj">
+      <Project>{E970BAC0-3E25-3227-BF73-9D01C80FCEEC}</Project>
+      <Name>tutorial05_textured_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial06_keyboard_and_mouse.vcxproj">
+      <Project>{CCFE6B81-5F63-3A1D-9B14-E14450E9057A}</Project>
+      <Name>tutorial06_keyboard_and_mouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial07_model_loading.vcxproj">
+      <Project>{F493E85D-37E0-3112-B410-A2BE8E8C94DA}</Project>
+      <Name>tutorial07_model_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial08_basic_shading.vcxproj">
+      <Project>{8DA58A1E-EFD1-35A2-9913-FE750890619D}</Project>
+      <Name>tutorial08_basic_shading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial09_AssImp.vcxproj">
+      <Project>{8F9FD5C3-E219-3C8A-A535-9947B6D08C82}</Project>
+      <Name>tutorial09_AssImp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial09_several_objects.vcxproj">
+      <Project>{3DF81524-7E13-316D-A595-B57DF133258B}</Project>
+      <Name>tutorial09_several_objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial09_vbo_indexing.vcxproj">
+      <Project>{E5F1FD5F-E2E4-3074-BF1B-BB662360DDFD}</Project>
+      <Name>tutorial09_vbo_indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial10_transparency.vcxproj">
+      <Project>{604A10E8-5F3A-3FCD-9355-204D872470C8}</Project>
+      <Name>tutorial10_transparency</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial11_2d_fonts.vcxproj">
+      <Project>{CA49C6BA-6349-36E8-919D-69BBE2497F74}</Project>
+      <Name>tutorial11_2d_fonts</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial12_extensions.vcxproj">
+      <Project>{A4D20A2F-CB5C-34C2-A20C-5BC74E60F90A}</Project>
+      <Name>tutorial12_extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial13_normal_mapping.vcxproj">
+      <Project>{AC131A1E-28CD-33C9-9E60-457F23BDFFFE}</Project>
+      <Name>tutorial13_normal_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial14_render_to_texture.vcxproj">
+      <Project>{4B5E1B30-8E31-33E0-ADC7-4B1812843F62}</Project>
+      <Name>tutorial14_render_to_texture</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial15_lightmaps.vcxproj">
+      <Project>{80ADEB1F-6E57-3608-BE24-0CBABC41385E}</Project>
+      <Name>tutorial15_lightmaps</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial16_shadowmaps.vcxproj">
+      <Project>{CE6167E5-B3C9-3E35-B530-46FA06A8E9B1}</Project>
+      <Name>tutorial16_shadowmaps</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial16_shadowmaps_simple.vcxproj">
+      <Project>{AE289A78-B1CF-3983-854A-BA7670F6DF43}</Project>
+      <Name>tutorial16_shadowmaps_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial17_rotations.vcxproj">
+      <Project>{DA8ED3D7-FF17-3D33-9AA9-AF3D37EACB96}</Project>
+      <Name>tutorial17_rotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial18_billboards.vcxproj">
+      <Project>{7E0325BD-2648-3FA0-9531-EEDFD8DB07BE}</Project>
+      <Name>tutorial18_billboards</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\tutorial18_particles.vcxproj">
+      <Project>{EC91FB12-5513-3500-A647-F46AF081C12C}</Project>
+      <Name>tutorial18_particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\examples\wave.vcxproj">
+      <Project>{9D8228FD-22F8-3B89-AC43-6BD44769C2B4}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\glfw-3.1.2\tests\windows.vcxproj">
+      <Project>{AE78F072-EC72-35C2-ABC8-178389F9899D}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\zlib.vcxproj">
+      <Project>{7656FAD2-D8AD-3921-9A39-569C344BC5AF}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

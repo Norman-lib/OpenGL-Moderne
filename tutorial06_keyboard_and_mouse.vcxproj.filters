@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\tutorial06_keyboard_and_mouse\tutorial06.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\common\shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\common\controls.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\common\texture.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\common\shader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\common\controls.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\common\texture.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\tutorial06_keyboard_and_mouse\TransformVertexShader.vertexshader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="C:\Users\Norma\Downloads\ogl-master\ogl-master\tutorial06_keyboard_and_mouse\TextureFragmentShader.fragmentshader">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3F09014B-0470-35C6-AB64-653F7B092DA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{FAA737B1-941F-3177-B847-537AC37B1230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{CC6BE099-1959-3B98-BA2E-706226FE8AA0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
